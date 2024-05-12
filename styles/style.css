@@ -1,0 +1,161 @@
+:root {
+    --accent-color: #46A358;
+    --secondary-color: #3D3D3D;
+    --main-color: #FFFFFF;
+    --bg-secondary-color: #FBFBFB;
+    --accent-color-transparent: rgba(70, 163, 88, 0.2);
+
+    --font-sm: 14px;
+    --font-md: 16px;
+    --font-xl: 18px;
+
+    --content-width: 1200px;
+}
+
+body {
+    font-family: 'Cera Pro DEMO', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: var(--font-md);
+    margin-bottom: 35px;
+}
+
+a {
+    font-size: var(--font-md);
+    color: var(--secondary-color);
+    text-decoration: none;
+    display: inline-block;
+}
+
+.container {
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.btn {
+    padding: 8px 17px;
+    background: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    background: transparent;
+    border: 2px solid transparent;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: var(--bg-secondary-color);
+    border-color:  var(--bg-secondary-color);
+}
+
+.btn.btn-success {
+    background: var(--accent-color);
+    border-color:  var(--accent-color);
+    color: white;
+}
+
+.btn.btn-success:hover {
+    background: var(--secondary-color);
+    border-color:  var(--accent-color);
+}
+
+/* Header */
+.header {
+    margin-top: 150px;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--accent-color-transparent);
+    padding-bottom: 18px;
+}
+
+.header__controls {
+    text-align: end;
+}
+
+.header nav ul {
+    display: flex;
+    gap: 50px;
+}
+
+.header nav li {
+    border-bottom: 2px solid transparent;
+    padding-bottom: 5px;
+    min-width: 85px;
+    text-align: center;
+}
+
+.header nav .active,
+.header nav li:hover {
+    font-weight: bold;
+    border-color: var(--accent-color);
+}
+
+.catalog__container {
+    display: flex;
+    gap: 20px;
+    max-width: var(--content-width);
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.catalog__product {
+    flex-basis: calc(33.33% - 20px);
+    border-top: 2px solid transparent;
+}
+
+.catalog__product.active {
+    border-top-color: var(--accent-color);
+}
+
+.catalog__product-image img {
+    width: 100%;
+    height: auto;
+}
+
+.catalog__product-title h6 {
+    margin: 10px 0;
+}
+
+.catalog__product-price {
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+.catalog__product-title {
+    margin-bottom: 5px;
+}
+
+header, main {
+    margin-left: 39px;
+}
+
+.catalog__product {
+    position: relative;
+}
+
+.catalog__product-icons {
+    position: absolute;
+    bottom: 55px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+}
+
+.catalog__product-icons img {
+    width: 20px;
+    height: 20px;
+}
+
+.catalog__product-image {
+    position: relative;
+}

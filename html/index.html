@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./../styles/fonts.css">
+    <link rel="stylesheet" href="./../styles/reset.css">
+    <link rel="stylesheet" href="./../styles/style.css">
+    <title>Catalog</title>
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="header__content">
+            <nav>
+                <ul>
+                    <li class="active"><a href="#">All Plants</a></li>
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Sale</a></li>
+                </ul>
+            </nav>
+            <div class="search__list">
+                <form>
+                    <label for="list_search">Short by:</label>
+                    <select id="list_search" name="list_search">
+                        <option value="default">Default sorting</option>
+                        <option value="lorem2">Lorem 2</option>
+                        <option value="lorem3">Lorem 3</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="container">
+    <div class="catalog__container">
+        <div class="catalog__product">
+            <div class="catalog__product-image">
+                <img src="./../assets/img/image1.png" alt="Barberton Daisy">
+            </div>
+            <div class="catalog__product-details">
+                <div class="catalog__product-title">
+                    <h6>Barberton Daisy</h6>
+                </div>
+                <div class="catalog__product-price">
+                    $119.00
+                </div>
+            </div>
+        </div>
+        <div class="catalog__product active">
+            <div class="catalog__product-image">
+                <img src="./../assets/img/image2.jpeg" alt="Angel Wing Begonia">
+            </div>
+            <div class="catalog__product-icons">
+                <img src="./../assets/icons/shopping.jpg" alt="shopping icon">
+                <img src="./../assets/icons/heart.jpg" alt="heart icon">
+                <img src="./../assets/icons/search.jpg" alt="search icon">
+            </div>
+            <div class="catalog__product-details">
+                <div class="catalog__product-title">
+                    <h6>Angel Wing Begonia</h6>
+                </div>
+                <div class="catalog__product-price">
+                    $169.00
+                </div>
+            </div>
+        </div>
+        <div class="catalog__product">
+            <div class="catalog__product-image">
+                <img src="./../assets/img/image3.png" alt="African Violet">
+            </div>
+            <div class="catalog__product-details">
+                <div class="catalog__product-title">
+                    <h6>African Violet</h6>
+                </div>
+                <div class="catalog__product-price">
+                    <span>$199.00</span> <span style="text-decoration: line-through; color: lightgray;">$229.00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <!-- Footer goes here -->
+</footer>
+
+</body>
+</html>
